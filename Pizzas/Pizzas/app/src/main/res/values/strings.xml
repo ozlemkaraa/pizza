@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pizza\'s</string>
+    <array name="icecekler">
+        <item>İçecek Seçiniz.</item>
+        <item>Coca-Cola + 25₺</item>
+        <item>Pepsi + 25₺</item>
+        <item>Fanta + 25 ₺</item>
+        <item>Sprite + 20₺</item>
+        <item>Ayran + 15₺</item>
+    </array>
+
+</resources>

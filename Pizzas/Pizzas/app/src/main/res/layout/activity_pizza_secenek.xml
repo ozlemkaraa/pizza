@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkapln"
+
+    tools:context=".PizzaSecenek">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pizza Seçenekleri"
+            android:layout_marginTop="25dp"
+            android:textSize="25dp">
+
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/radioGroup"
+            >
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="135"
+                android:text="Karışık Pizza -İÇİNDEKİLER; Mozeralla peynir, sucuk, mısır, domates, biber, zeytin  135₺" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:tag="125"
+                android:text="Dört Peynirli - İÇİNDEKİLER; Mozeralla peyniri, hellim peyniri, cheddar peyniri, parmesan peyniri  125₺" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="15dp"
+                android:tag="140"
+                android:text="Kavurmalı Pizza - İÇİNDEKİLER; Mozeralla peyniri, kavurma  140₺" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:tag="130"
+                android:text="Mexico Pizza - İÇİNDEKİLER; Mozeralla peyniri,sucuk, mantar, acı baharat 130₺" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="İçecekler"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:entries="@array/icecekler" />
+
+            <TextView
+                android:id="@+id/etf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="25dp"
+                android:inputType="text"
+                android:text="Toplam Tutar: "/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="70dp"
+            android:layout_marginTop="15dp"
+            tools:layout_editor_absoluteY="144dp">
+
+            <Button
+                android:id="@+id/btso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cornerRadius='10dp'
+                android:backgroundTint="#D84B43"
+                android:textColor="#FCD497"
+                android:layout_margin="10dp"
+                android:text="Önceki Sayfa" />
+
+            <Button
+                android:id="@+id/btss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cornerRadius='10dp'
+                android:layout_margin="10dp"
+                android:backgroundTint="#D84B43"
+                android:textColor="#FCD497"
+                android:text="Sonraki Sayfa" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

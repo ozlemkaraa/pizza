@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/arkapln"
+    tools:context=".krediKarti">
+
+    <TextView
+        android:id="@+id/kartnumtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kart Numarası:"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/kartnumet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kartnumtv"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="Kart numaranızı giriniz"/>
+
+    <TextView
+        android:id="@+id/skttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kartnumet"
+        android:layout_marginTop="16dp"
+        android:text="SKT:" />
+
+    <EditText
+        android:id="@+id/sktet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skttv"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="Son kullanma tarihini giriniz"/>
+
+    <TextView
+        android:id="@+id/cvvtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sktet"
+        android:layout_marginTop="16dp"
+        android:text="CVV:" />
+
+    <EditText
+        android:id="@+id/cvvet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvvtv"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="3 haneli güvenlik kodunuzu giriniz"/>
+
+    <Button
+        android:id="@+id/onaybt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvvet"
+        android:layout_marginTop="16dp"
+        android:text="Onayla" />
+
+</RelativeLayout>
